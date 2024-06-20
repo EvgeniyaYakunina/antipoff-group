@@ -1,0 +1,24 @@
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px
+}
+
+.paginationButton {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: background-color 0.3s
+}
+
+.paginationButton:hover {
+    background-color: #f0f0f0
+}
+
+.paginationButton.active {
+    font-weight: bold
+}

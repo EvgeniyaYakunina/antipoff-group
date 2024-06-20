@@ -1,0 +1,41 @@
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 846px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px
+}
+
+.text {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: -45px;
+}
+
+@media screen and (max-width: 900px) {
+.textContainer{
+    align-items: center;
+    margin: 0 auto;
+}
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 1px;
+    }
+}

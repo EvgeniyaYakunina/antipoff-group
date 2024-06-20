@@ -1,0 +1,61 @@
+.cards {
+    padding: 48px 80px 69px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 56px
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.button {
+    border: 1px solid #151317;
+    border-radius: 8px;
+    width: 170px;
+    height: 40px;
+    align-self: center;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s
+}
+
+.button:hover {
+    scale: 1.03
+}
+
+.buttonArrow {
+    background-image: url('../../assets/arrow.svg');
+    width: 17px;
+    height: 10px
+}
+
+@media screen and (max-width: 1439px) {
+    .cards {
+        max-width: 1115px
+    }
+}
+
+@media screen and (max-width: 1114px) {
+    .cards {
+        max-width: 790px;
+    }
+}
+@media screen and (max-width: 900px){
+    .cards {
+        padding: 48px 35px;
+        max-width: 100%;
+    }
+    .list {
+        width: 100%;
+    }
+    .button {
+        margin: 0 auto;
+    }
+}
