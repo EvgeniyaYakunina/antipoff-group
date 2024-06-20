@@ -24,7 +24,7 @@ export const Register = () => {
 
     const onSubmit = ({password, email}: { email: string, password: string }) => {
         dispatch(registerTC(email, password))
-        navigate('/')
+        navigate('/cards')
     }
 
     const handleShowPassword = () => {
