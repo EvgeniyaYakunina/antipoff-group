@@ -22,7 +22,7 @@ export const Login = () => {
 
     const onSubmit = ({password, email}: { email: string, password: string }) => {
         dispatch(loginTC(email, password))
-        navigate('/')
+        navigate('/cards')
     }
     const handleShowPass = () => {
         setIsPassHidden(!isPassHidden)
