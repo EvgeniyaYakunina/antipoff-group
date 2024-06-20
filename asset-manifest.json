@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/antipoff-group/static/css/main.4aecbc76.css",
-    "main.js": "/antipoff-group/static/js/main.1511ceaf.js",
+    "main.js": "/antipoff-group/static/js/main.05fb6dbf.js",
     "static/js/453.5cf5c4a6.chunk.js": "/antipoff-group/static/js/453.5cf5c4a6.chunk.js",
     "static/media/exit.svg": "/antipoff-group/static/media/exit.e3febb0a52b2929a9f47.svg",
     "static/media/arrow.svg": "/antipoff-group/static/media/arrow.050c724a5e29dff2932a.svg",
@@ -13,11 +13,11 @@
     "static/media/likeWhite.svg": "/antipoff-group/static/media/likeWhite.061e171d2a52e699ffb3.svg",
     "static/media/mail.svg": "/antipoff-group/static/media/mail.2f6fdafd8ef310597afa.svg",
     "main.4aecbc76.css.map": "/antipoff-group/static/css/main.4aecbc76.css.map",
-    "main.1511ceaf.js.map": "/antipoff-group/static/js/main.1511ceaf.js.map",
+    "main.05fb6dbf.js.map": "/antipoff-group/static/js/main.05fb6dbf.js.map",
     "453.5cf5c4a6.chunk.js.map": "/antipoff-group/static/js/453.5cf5c4a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4aecbc76.css",
-    "static/js/main.1511ceaf.js"
+    "static/js/main.05fb6dbf.js"
   ]
 }
