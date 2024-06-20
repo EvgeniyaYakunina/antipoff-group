@@ -85,7 +85,7 @@ export const Login = () => {
                 </button>
                 <div className={s.span}>
                     Еще не зарегистрированы?{' '}
-                    <Link to="/register" className={s.link}>
+                    <Link to="/" className={s.link}>
                         Регистрация
                     </Link>{' '}
                 </div>

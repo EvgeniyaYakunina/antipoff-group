@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 import s from './cards.module.css'
 import {UserType} from "../../types"
 import {useAppDispatch} from "../../state"
@@ -17,11 +17,14 @@ export const Cards=({users, totalPages}: Props)=>{
     const [currentPage, setCurrentPage] = useState(1) //состояние для текущей страницы
     const [visibleUsers, setVisibleUsers] = useState<UserType[]>(users.slice(0, usersPerPage))
 
+    useEffect(() => {
+        const startIndex = (currentPage - 1) * usersPerPage;
+        setVisibleUsers(users.slice(startIndex, startIndex + usersPerPage));
+    }, [users, currentPage])
+
     const updatePage = (pageNumber: number) => {
         dispatch(setCurrentPageAC(pageNumber))
         setCurrentPage(pageNumber)
-        const startIndex = (pageNumber - 1) * usersPerPage
-        setVisibleUsers(users.slice(startIndex, startIndex + usersPerPage)) // Обновление видимых пользователей
     }
     const showMoreUsers = () => {
         setVisibleUsers(prevUsers => [
