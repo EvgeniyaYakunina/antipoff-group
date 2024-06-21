@@ -11,6 +11,7 @@ export const Register = () => {
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
     const [isPassHidden, setIsPassHidden] = useState(true)
+    const [isConfirmPassHidden, setIsConfirmPassHidden] = useState(true)
 
     const validateEmail =
         /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
@@ -29,6 +30,9 @@ export const Register = () => {
 
     const handleShowPassword = () => {
         setIsPassHidden(!isPassHidden);
+    }
+    const handleShowConfirmPassword = () => {
+        setIsConfirmPassHidden(!isConfirmPassHidden);
     }
     return (
         <section className={s.register}>
@@ -96,7 +100,7 @@ export const Register = () => {
                         render={({message}) => <p className={s.error}>{message}</p>}
                     />
                     <div
-                        className={s.showPass}
+                        className={s.showPassword}
                         onClick={handleShowPassword}
                     />
                 </label>
@@ -106,7 +110,7 @@ export const Register = () => {
                         className={errors.confirmation ? s.inputError : s.input}
                         id={"confirmation"}
                         placeholder={"******"}
-                        type={isPassHidden ? 'password' : 'text'}
+                        type={isConfirmPassHidden ? 'password' : 'text'}
                         {...register('confirmation', {
                             required: 'Поле обязательно для заполнения',
                             minLength: {
@@ -125,7 +129,7 @@ export const Register = () => {
                         name={'password'}
                         render={({message}) => <p className={s.error}>{message}</p>}
                     />
-                    <div className={s.showPassword} onClick={handleShowPassword}/>
+                    <div className={s.showPassword} onClick={handleShowConfirmPassword}/>
                 </label>
                 <button type={'submit'} className={s.submit}>
                     Зарегистрироваться

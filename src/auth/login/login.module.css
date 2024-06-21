@@ -21,7 +21,8 @@
 .title {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    text-align: left;
 }
 
 .label {
@@ -29,14 +30,17 @@
     flex-direction: column;
     gap: 8px;
     margin-bottom: 32px;
-    position: relative
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .input {
     background: #F8F8F8;
     border-radius: 8px;
     border: none;
-    height: 48px;
+    height: 20px;
     color: #808185;
     font-size: 14px;
     line-height: 16px;
@@ -45,15 +49,17 @@
 
 .inputError {
     composes: input;
-    border: 1px solid #FF6161
+    border: 1px solid #FF6161;
+    font-size: 14px;
 }
 
 .error {
     color: #FF6161;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 12px;
     position: absolute;
-    bottom: -27px
+    bottom: -22px;
+    font-weight: 400
 }
 
 .showPassword {
@@ -76,7 +82,9 @@
     border-radius: 8px;
     height: 48px;
     color: #FFFFFF;
-    transition: 0.3s
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .button:disabled {
